@@ -9,14 +9,16 @@ function App() {
 	return (
 		<div className={styles.container}>
 			<Grid container spacing={3}>
-				<Grid item spacing={3} xs={12} md={12}>
+				<Grid item xs={12} md={12}>
 					<Header />
 				</Grid>
-				<Grid item spacing={3} xs={12} md={4}>
+
+				<Grid item xs={12} md={3}>
 					<Cards />
 					<PieChart />
 				</Grid>
-				<Grid item spacing={3} xs={12} md={8}>
+
+				<Grid item xs={12} md={8}>
 					<CountryPicker />
 					<LineChart />
 				</Grid>			
