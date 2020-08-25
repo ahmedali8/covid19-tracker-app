@@ -1,0 +1,19 @@
+.formControl {
+    margin-bottom: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.text {
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 770px) {
+    .text {
+        display: block;
+        margin: 5% 0;
+        text-align: center;
+    }
+}
