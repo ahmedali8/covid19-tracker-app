@@ -3,7 +3,8 @@ import { fetchData } from '../api';
 import AppReducer from './AppReducer';
 
 const initialState = {
-    data: {}
+    data: {},
+    country: ''
 };
 
 // create context
@@ -23,10 +24,18 @@ export const GlobalProvider = ({ children }) => {
         fetchAPI();
     }, []);
 
+    const countryHandler = async (countryName) => {
+        // fetch the data 
+        console.log(countryName)
+
+        // set to state
+    };
+
     
     return (
         <GlobalContext.Provider value={{
-            data: state.data
+            data: state.data,
+            countryHandler
         }}>
             { children }
         </GlobalContext.Provider>
