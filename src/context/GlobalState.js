@@ -23,12 +23,15 @@ export const GlobalProvider = ({ children }) => {
 
         fetchAPI();
     }, []);
+    
 
-    const countryHandler = async (countryName) => {
+    const countryHandler = async (country) => {
+        
         // fetch the data 
-        console.log(countryName)
+        const fetchedCountry = await fetchData(country);
 
         // set to state
+        dispatch({ type: 'FETCHED_COUNTRY', payload: fetchedCountry, country: country });
     };
 
     

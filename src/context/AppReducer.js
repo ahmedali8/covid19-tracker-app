@@ -4,6 +4,11 @@ export default (state, action) => {
             return {
                 data: action.payload
             }
+        case 'FETCHED_COUNTRY':
+            return {
+                data: action.payload,
+                country: action.country
+            }
         default:
             return state;
     }
