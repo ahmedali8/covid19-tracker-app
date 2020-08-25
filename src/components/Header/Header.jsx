@@ -4,8 +4,8 @@ import styles from './Header.module.css';
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
+        <div className={styles.container}>
+            <h1>COVID-19 TRACKER</h1>
         </div>
     );
 };

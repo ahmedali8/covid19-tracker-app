@@ -1,17 +1,26 @@
 import React from 'react';
 import { Cards, LineChart, PieChart, CountryPicker, Header } from './components';
 
-import './App.module.css';
+import { Grid } from '@material-ui/core';
+
+import styles from './App.module.css';
 
 function App() {
 	return (
-		<div>
-			App
-			<Header />
-			<CountryPicker />
-			<Cards />
-			<PieChart />
-			<LineChart />
+		<div className={styles.container}>
+			<Grid container spacing={3}>
+				<Grid item spacing={3} xs={12} md={12}>
+					<Header />
+				</Grid>
+				<Grid item spacing={3} xs={12} md={4}>
+					<Cards />
+					<PieChart />
+				</Grid>
+				<Grid item spacing={3} xs={12} md={8}>
+					<CountryPicker />
+					<LineChart />
+				</Grid>			
+			</Grid>
 		</div>
 	);
 }
