@@ -1,0 +1,18 @@
+.container {
+    width: 120% !important;
+}
+
+canvas {
+    margin: 0 auto !important;
+}
+
+@media (max-width: 770px) {
+    .container{
+        width: 100% !important;
+    }
+
+    canvas {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
