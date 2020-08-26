@@ -1,0 +1,13 @@
+
+.card {
+    width: 90% !important;
+    margin: 2% !important;
+}
+
+/* media queries */
+@media (max-width: 770px) {
+    .card {
+        width: 80% !important;
+        margin: 2% !important;
+    }
+}
