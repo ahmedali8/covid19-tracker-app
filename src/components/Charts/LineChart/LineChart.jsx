@@ -36,6 +36,7 @@ const LineChart = () => {
                         data: dailyData.map(({ deaths }) => deaths),
                     }],
                 }}
+                height={200}
             />
         ) : null  
     );

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+canvas {
+    margin: 0 auto !important;
+}
+
+
+/* media queries */
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+    }
+
+    canvas {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    
+}
