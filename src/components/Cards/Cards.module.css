@@ -1,10 +1,13 @@
-/* .container {
-    margin: 50px 0 !important;
-} */
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 
 .card {
+    width: 90% !important;
     margin: 2% !important;
-    margin-left: 10% !important;
 }
 
 .confirmed {
@@ -19,9 +22,20 @@
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
 }
 
+.text {
+    display: none;
+}
+
+
 /* media queries */
 @media (max-width: 770px) {
     .card {
-        margin: 2% 0 !important;
+        width: 80% !important;
+        margin: 2% !important;
+    }
+    .text {
+        display: block;
+        margin: 5% 0;
+        text-align: center;
     }
 }
