@@ -38,6 +38,7 @@ export const GlobalProvider = ({ children }) => {
     return (
         <GlobalContext.Provider value={{
             data: state.data,
+            country: state.country,
             countryHandler
         }}>
             { children }
