@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Cards, LineChart, PieChart, CountryPicker, Header } from './components';
+import { Cards, LineChart, PieChart, CountryPicker, Header, Footer } from './components';
 import { Grid } from '@material-ui/core';
 
 import { GlobalContext } from './context/GlobalState';
@@ -23,7 +23,12 @@ function App() {
 
 				<Grid item xs={12} md={8} zeroMinWidth>
 					{country ? <PieChart /> : <LineChart />}				
-				</Grid>			
+				</Grid>
+
+				{/* <Grid item xs={12} md={12} zeroMinWidth>
+					<Footer />
+				</Grid>		 */}
+				<Footer />
 			</Grid>
 		</div>
 	);
