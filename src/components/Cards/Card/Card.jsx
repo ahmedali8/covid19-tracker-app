@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 import styles from './Card.module.css';
 
-const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }) => {
+const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle, borderStyle }) => {
     return (
         <Grid item component={Card} elevation={3} className={cx(styles.card, className)}>
             <CardContent>
@@ -18,7 +18,7 @@ const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }
                         end={value}
                         duration={2.4}
                         separator=","
-                        style={{ borderBottom: '2px solid rgba(255, 145, 0, 0.5)' }}
+                        style={borderStyle}
                     />
                 </Typography>
                 <Typography color="textSecondary">

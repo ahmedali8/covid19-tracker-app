@@ -23,6 +23,7 @@ const Cards = () => {
                     value={confirmed.value}
                     lastUpdate={lastUpdate}
                     cardSubtitle="Number of active cases from COVID-19."
+                    borderStyle={{ borderBottom: '2px solid rgba(255, 145, 0, 0.5)' }}
                 />
 
                 <CardComponent 
@@ -31,6 +32,7 @@ const Cards = () => {
                     value={recovered.value}
                     lastUpdate={lastUpdate}
                     cardSubtitle="Number of recoveries from COVID-19."
+                    borderStyle={{ borderBottom: '2px solid rgba(0, 255, 0, 0.5)' }}
                 />
 
                 <CardComponent 
@@ -39,6 +41,7 @@ const Cards = () => {
                     value={deaths.value}
                     lastUpdate={lastUpdate}
                     cardSubtitle="Number of deaths caused by COVID-19."
+                    borderStyle={{ borderBottom: '2px solid rgba(255, 0, 0, 0.5)' }}
                 />
 
                 <div className={styles.text}>Rotate the screen on mobile phone</div>
