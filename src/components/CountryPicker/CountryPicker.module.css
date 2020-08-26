@@ -5,15 +5,3 @@
     align-items: center !important;
 }
 
-.text {
-    display: none;
-}
-
-/* media queries */
-@media (max-width: 770px) {
-    .text {
-        display: block;
-        margin: 5% 0;
-        text-align: center;
-    }
-}
