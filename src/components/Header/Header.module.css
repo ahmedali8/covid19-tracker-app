@@ -1,5 +1,37 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
+
+.h2Typo {
+    border-bottom: 2px solid #000;
+    font-weight: bold !important;
+}
+
+.h6Typo {
+    margin-bottom: 30px !important;
+}
+
+/* media queries */
+@media (max-width: 770px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .h2Typo {
+        font-size: 35px !important;
+        padding: 10px 0 !important;
+        border: none;
+    }
+    
+    .h6Typo {
+        border-top: 2px solid #000;
+        margin-top: 0;
+        margin-bottom: 30px !important;
+    }
 }
